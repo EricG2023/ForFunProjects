@@ -1,0 +1,84 @@
+.funPage {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: radial-gradient(circle, #000000, #ff758c, #ff6377);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.animationSection {
+  margin: 40px 0;
+}
+
+.animationSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.animatedBox {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  animation: spin 4s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bouncingCircle {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: #00f5d4;
+  border-radius: 50%;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.gradientTextSection {
+  margin: 40px 0;
+}
+
+.gradientText {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6377, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}

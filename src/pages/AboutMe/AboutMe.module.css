@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .about-me {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-me:hover {
+    transform: translateY(-5px);
+  }
+  
+  .about-me-title {
+    font-size: 3rem;
+    color: #1e3c72;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-me-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #2a5298;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-me-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-me-text h2 {
+    font-size: 2rem;
+    color: #2a5298;
+    margin: 10px 0;
+  }
+  
+  .about-me-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  section {
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    border-left: 5px solid #2a5298;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    list-style: disc inside;
+    padding: 0 20px;
+  }
+  
+  section ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  section ul li:hover {
+    transform: translateX(10px);
+    color: #2a5298;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #1e3c72;
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
